@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ali','AlipayController@toaccountTransfer');
+Route::get('ali/toaccount','AlipayController@toaccountTransfer');//单笔转账
+Route::get('ali/query','AlipayController@orderQuery');//单笔转账查询
+
